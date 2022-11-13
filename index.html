@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conservation Chatbot</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script> 
+</head>
+<body>
+  <header>
+		<h1>Conservation Conversation</h1>
+		<p>Welcome to our conservation chatbot! This chatbot is designed to educate the general public about endangered species and conservation efforts related to those species. Some animals you can learn about are tigers, orangutans, and more! To begin, click the chat icon at the bottom right corner of your screen and you will see a small screen pop up. Then, prompt the chatbot about the animal you want to know about, and it will share some fun facts and conservation information! Enjoy! </p>
+    <h2>Questions to ask:</h2>
+    <p>- Give me facts on ______</p>
+    <p>- Tell me about ______</p>
+    <p>- Tell me more</p>
+    <p>- Tell me about conservation</p>
+	</header>
+
+  <h2> Hear about: </h2>
+  <div>
+    <a href="https://www.worldwildlife.org/species/orangutan"> <img src="images/orangutan.png" class = "photos"> </a>
+    <p class="caption"> Photo of an orangutan by <a href="https://unsplash.com/@chuttersnap?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">CHUTTERSNAP</a> on <a href="https://unsplash.com/s/photos/orangutan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   </p>
+  </div>
+  <div>
+    <a href="https://www.worldwildlife.org/species/tiger"> <img src="images/tiger.png" class = "photos"> </a>
+    <p class="caption"> Photo of a tiger by <a href="https://unsplash.com/@agord70345203222008?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">A G</a> on <a href="https://unsplash.com/s/photos/tiger?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   </p>
+  </div>
+  <div>
+    <a href="https://www.worldwildlife.org/species/rhino"> <img src="images/rhino.png" class = "photos"> </a>
+    <p class="caption"> Photo of a rhino by <a href="https://unsplash.com/@gh9430018"> Gerald Hartl</a> on <a href="https://unsplash.com/photos/ZD4MbMJgQyw">Unsplash</a> </p>
+  </div>
+  <div>
+    <a href="https://www.worldwildlife.org/species/giant-panda"> <img src="images/panda.jpg" class = "photos"> </a>
+    <p class="caption"> Photo of a panda by <a href="https://www.pexels.com/@simplyart4794-53798833/">SimplyArt4794</a> on <a href=https://images.pexels.com/photos/8261511/pexels-photo-8261511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2> Pexels</a></p>
+  </div>
+  <div>
+    <a href="https://www.worldwildlife.org/species/elephant"> <img src="images/elephant.png" class = "photos"> </a>
+    <p class="caption"> Photo of an elephant by <a href="https://unsplash.com/@wolfgang_hasselmann">Wolfgang Hasselmann</a> on <a href="https://unsplash.com/photos/P7L5011nD5s">Unsplash</a></p>
+  </div>
+  
+
+	<div class="chatbox-container">
+		<div class="chatbox-toggle">
+			<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chat-right-dots" viewBox="0 0 16 16">
+  <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+  <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+      </svg>
+		</div>
+		<div class="msg-container">
+			<div class="msg-header"> Messages
+			</div>
+			<div class="msg-content">
+				<h4 class="no-msg">Name an animal</h4>
+			</div>
+			<div class="msg-bottom">
+				<form action="#" class="msg-form">
+					<textarea rows="1" placeholder="Type message here..." class="msg-input"></textarea>
+          <!--Send Icon-->
+					<button type="submit" class="msg-submit" onclick="toggleActive(this);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+  <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+            </svg>
+          </button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+  <footer>
+    <p id="credits"> Created by Ava Fu, Gracie Yang, and Allen Yu. </p>
+  </footer>
+	
+</body>
+</html>
